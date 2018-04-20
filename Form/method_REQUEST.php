@@ -7,9 +7,8 @@
  */
 
 // Kako da prikazemo to sto je uneto u text box : koristimo SUPERGLOBALE
-
-$name = $_REQUEST['name'];
-$surname = $_REQUEST['surname'];
+$name = strip_tags($_REQUEST['name']);
+$surname = strip_tags($_REQUEST['surname']);
 
 
 ?>
@@ -19,20 +18,23 @@ $surname = $_REQUEST['surname'];
         <title>Get, Post and Request</title>
     </head>
     <body>
+        <!-- Mozemo koristiti bilo koju metodu post/get -->
         <form method="get" action="method_REQUEST.php">
-
-            <!-- http://vezbe.local/php/lib/primjeri/Form/method_POST_GET2.php
-            OVO JE SIGURNIJE JER SE PODACI KOJE SMO UNELI NE POJAVLJUJU U URL-u -->
 
             name : <input type="text" name="name"/>
             surname : <input type="text" name="surname"/>
 
-            <input type="submit" value="submit">
+            <input type="submit" value="submit"/>
 
             <h2> Handling your data </h2>
 
             <!-- Ovde ce se stampati -->
-            <?php echo "Your name is : " . $name . " " . $surname?>
+            <?php
+            // out: array
+            print_r($_REQUEST);
+
+            echo "<br/>Your name is : " . $name . " " . $surname;
+            ?>
         </form>
     </body>
 </html>

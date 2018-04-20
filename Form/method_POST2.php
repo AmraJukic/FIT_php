@@ -6,6 +6,14 @@
  * Time: 5:34 PM
  */
 
-echo $_GET['check'];
-echo "<br/>";
-echo $_GET['age'];
+// I Fajl: method_POST3.php
+
+
+// check=1
+
+
+if(isset($_GET['check']))
+{
+    echo strip_tags($_POST['name']) . "</br>";
+    echo strip_tags($_POST['message']);
+}

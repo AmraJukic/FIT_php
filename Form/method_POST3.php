@@ -1,9 +1,16 @@
 <html>
+
+    <!-- I Fajl: method_POST2.php
+
+        check=1
+    -->
+
     <head>
         <title>POST</title>
     </head>
     <body>
-        <form method="post" action="method_POST2.php?check=1&;age=33">
+        <!-- Definisemo check=1 u URL-u DA SE PRIKAZE -->
+        <form method="post" action="method_POST2.php?check=1">
 
             <b>Name : </b> <input type="text" name="name"><br/><br/>
             <b>Message : </b> <textarea name="message"></textarea><br/><br/>

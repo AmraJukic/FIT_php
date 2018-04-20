@@ -7,9 +7,8 @@
  */
 
 // Kako da prikazemo to sto je uneto u text box : koristimo SUPERGLOBALE
-
-$name = $_GET['name'];
-$surname = $_GET['surname'];
+$name = strip_tags($_GET['name']);
+$surname = strip_tags($_GET['surname']);
 
 ?>
 
