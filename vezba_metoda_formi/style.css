@@ -1,0 +1,80 @@
+body{
+    background-color: white;
+    font: 1em/1.5 sans-serif;
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+    color: darkblue;
+}
+form{
+    margin : 20px auto;
+    width : 320px;
+    color: darkblue;
+}
+input{
+    padding: 10px;
+    font-size: inherit;
+}
+input[name="firstname"]{
+    display: block;
+    margin-bottom: 25px;
+    width: 100%;
+    border: 2px solid darkblue;
+    background: lightsteelblue;
+}
+input[name="lastname"]{
+    display: block;
+    margin-bottom: 25px;
+    width: 100%;
+    border: 2px solid darkblue;
+    background: lightsteelblue;
+}
+input[name="password"]{
+    display: block;
+    margin-bottom: 25px;
+    width: 100%;
+    border: 2px solid darkblue;
+    background: lightsteelblue;
+}
+input[name="confirmpassword"]{
+    display: block;
+    margin-bottom: 25px;
+    width: 100%;
+    border: 2px solid darkblue;
+    background: lightsteelblue;
+}
+input[name="email"]{
+    display: block;
+    margin-bottom: 25px;
+    width: 100%;
+    border: 2px solid darkblue;
+    background: lightsteelblue;
+}
+input[type="radio"]{
+    margin: 0 8px 25px 18px;
+}
+input[type="radio"]:first-child{
+    margin-left: 0;
+}
+input[type="submit"]{
+    width : 344px;
+    height: 45px;
+    border: none;
+    background: darkblue;
+    color: white;
+}
+input[type="submit"]:focus{
+    width : 344px;
+    height: 45px;
+    border: darkblue;
+    background: white;
+    color: darkblue;
+}
+input:focus{
+    background: white;
+}
+input[type="radio"]:checked + label{
+    font-weight: bold;
+    font-size: 18px;
+}
